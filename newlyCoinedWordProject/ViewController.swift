@@ -22,35 +22,26 @@ class ViewController: UIViewController {
         searchTextField.layer.borderWidth = 2
         searchTextField.layer.borderColor = UIColor.black.cgColor
         
-        newWordButton1.tintColor = UIColor.black
-        newWordButton1.layer.cornerRadius = 10
-        newWordButton1.layer.borderWidth = 2
-        newWordButton1.layer.borderColor = UIColor.black.cgColor
         
         
-        newWordButton2.tintColor = UIColor.black
-        newWordButton2.layer.cornerRadius = 10
-        newWordButton2.layer.borderWidth = 2
-        newWordButton2.layer.borderColor = UIColor.black.cgColor
-        
-        
-        newWordButton3.tintColor = UIColor.black
-        newWordButton3.layer.cornerRadius = 10
-        newWordButton3.layer.borderWidth = 2
-        newWordButton3.layer.borderColor = UIColor.black.cgColor
-        
-        
-        newWordButton4.tintColor = UIColor.black
-        newWordButton4.layer.cornerRadius = 10
-        newWordButton4.layer.borderWidth = 2
-        newWordButton4.layer.borderColor = UIColor.black.cgColor
-        
+        buttonAttribute(newWordButton: newWordButton1)
+        buttonAttribute(newWordButton: newWordButton2)
+        buttonAttribute(newWordButton: newWordButton3)
+        buttonAttribute(newWordButton: newWordButton4)
         
     
         
         
     }
-
+    // button부분 함수로 바꿈
+    
+    func buttonAttribute(newWordButton: UIButton) {
+        newWordButton.tintColor = UIColor.black
+        newWordButton.layer.cornerRadius = 10
+        newWordButton.layer.borderWidth = 2
+        newWordButton.layer.borderColor = UIColor.black.cgColor
+    }
+    
     @IBAction func searchButton(_ sender: UIButton) {
         
         
